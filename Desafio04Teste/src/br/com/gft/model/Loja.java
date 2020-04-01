@@ -86,6 +86,20 @@ public class Loja {
 		System.out.println("O patrimônio da loja Americanas � de " + (x + y));
 	}
 	
+	public double calculaPatrimonioTeste() {
+		double x = 0;
+		double y = 0;
+		for ( int i = 0; i < videogames.size(); ++i) {
+			x += (videogames.get(i).getPreco()*videogames.get(i).getQtd());
+		}
+		for ( int i = 0; i < livros.size(); ++i) {
+			y += (livros.get(i).getPreco()*livros.get(i).getQtd());
+		}
+		double w = (x+y);
+		return w;
+	}
+	
+	
 	
 	
 }
